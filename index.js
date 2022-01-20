@@ -36,7 +36,7 @@ app.use(
 
 
 // let isLogin = true
-app.get('/', function(request, response) {
+app.get('/index', function(request, response) {
     response.render('index', {
 
         isLogin: request.session.isLogin,
