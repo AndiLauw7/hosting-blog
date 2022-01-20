@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/asset/css/contact.css">
+    <link rel="stylesheet" href="../public/asset/css/navbar.css">
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="/index">
+                    <img src="asset/logo.png" alt="">
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="">Portofolio</a> </li>
+            </ul>
+
+        </div>
+        <!-- <div class="marquee">
+                <p> 
+                    <marquee behavior="right" direction="right">Have a nice day</marquee>
+                 </p>
+            </div> -->
+
+        <div class="contact">
+            <a href="/contact">
+                <img src="../public/asset/images/mail.png" alt="">Contact Me
+            </a>
+        </div>
+
+    </nav>
+
+    <form action="" method="post">
+        <h3>Form input</h3>
+        <div>
+            <label for="nama" style="font-weight: bold; font-size: 20px;">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="input nama">
+
+        </div>
+
+        <div>
+            <label for="telpon" style="font-weight: bold; font-size: 20px; ">No Telpon</label>
+            <input type="number" id="telpon" name="telpon" placeholder="input telpon">
+
+        </div>
+
+        <div>
+            <label for="email" style="font-weight: bold; font-size: 20px; ">email</label>
+            <input type="email" id="email" name="email" placeholder="input email">
+        </div>
+
+        <div class="checkbox">
+            <label for="checkbox" style="font-weight: bold; font-size: 20px; ">Skill</label>
+            <div class="check">
+
+                <div>
+                    <input type="checkbox" id="html" name="html" value="html">
+                    <label for="html">Html</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="css" name="css" value="css">
+                    <label for="css">Css</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="git" name="git" value="git">
+                    <label for="git">Github</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="js" name="js" value="js">
+                    <label for="js">Js</label>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div>
+            <label for="Subject" style="font-weight: bold; font-size: 20px; ">Subject</label>
+            <select name="Subject" id="Subject">
+                <option value="">Select Here</option>
+                <option>Im hiring</option>
+                <option >Problem With Our Site</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="textarea" style="text-align: center; font-weight: bold; font-size: 20px;">Message</label>
+            <textarea name="textarea" id="textarea" maxlength="200"></textarea>
+        </div>
+
+        <div class="submit">
+            <button type="submit" onclick="submitData()"> Submit</button>
+        </div>
+
+
+    </form>
+    <script src="/C2day2/contact.js"></script>
+
+</body>
+
+</html>

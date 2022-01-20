@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(39, 38, 38);
+    color: rgb(229 227 226);
+    font-family: url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Mali:wght@200&display=swap');
+    cursor: pointer;
+}
+
+
+/* ~~~~~ ELEMENT LEFT  ~~~~~ */
+
+.container {
+    height: 93vh;
+    display: flex;
+    font-family: 'Open Sans', 'sans-serif,Lobster', 'cursive';
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.container .section {
+    display: flex;
+    width: 85%;
+}
+
+.section .left {
+    display: flex;
+    flex: 30%;
+}
+
+.section .right {
+    flex: 70%;
+}
+
+.card1 {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid coral;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(230, 230, 230);
+}
+
+.card1 img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card1 p {
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tr {
+    background-color: rgb(180, 78, 11);
+    text-align: center;
+    color: rgb(229 227 226);
+}
+
+td {
+    padding: 0 5px;
+    color: rgb(229 227 226);
+}
+
+
+/* ~~~~~ELEMENT RIGHT~~~~~ */
+
+.right {
+    /* padding: 5px 0; */
+    width: 70%;
+    padding-left: 40px;
+}
+
+.right .skil-container {
+    display: flex;
+}
+
+.skil-container div {
+    flex: 1;
+}
+
+
+/* .skil-container div img {
+    padding: 5px 0;
+    width: 70px;
+    height: 50px;
+} */
+
+.middle {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.middle img {
+    width: 50px;
+}
+
+.kartu {
+    width: 50px;
+    background-color: rgb(255 255 255);
+    border-radius: 10px;
+    box-shadow: (0, 0, 0, 0.205);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 1s;
+}
+
+.kartu:hover {
+    color: #ffff;
+    box-shadow: rgb(255 255 255);
+    transform: translateX(10px);
+}
+
+
+/* ~~~~~ ELEMENT MEDSOS ~~~~~*/
+
+.medsos {
+    padding: 10px 0;
+}
+
+.kotak {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.kotak a {
+    text-decoration: none;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.kotak img {
+    width: 50px;
+}
+
+.box {
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 10px;
+    align-items: center;
+    border: 3px 3x rgb(230, 230, 230);
+    box-shadow: 3px 3px rgb(230, 230, 230);
+}
+
+.box:hover {
+    background-color: blue;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        display: block;
+    }
+    .container .section {
+        display: block;
+        margin: 50px auto;
+    }
+    .section .right {
+        padding-left: 5px;
+        margin-top: 10px;
+    }
+    .right .skil-container {
+        justify-content: center;
+        display: block;
+    }
+    .medsos .kotak {
+        display: block;
+    }
+    .kotak .card {
+        display: flex;
+        width: 50px;
+        height: 100%;
+        background-color: rgba(255, 30, 30, 0.144);
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        /* position: relative; */
+        transition: 1s;
+        padding: 10px 0;
+    }
+}

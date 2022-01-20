@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Andi Lauw</title>
+    <link rel="stylesheet" href="../public/asset/css/navbar.css">
+    <link rel="stylesheet" href="../public/asset/css/style.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="asset/logo.png">
+
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="/index">
+                    <img src="../public/asset/images/logo.png" alt="">
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="">Portofolio</a> </li>
+                {{!-- <li> 
+                     <a class="nav-link active" aria-current="page" href="/login">Login</a>
+                     </li>
+                <li>
+                    <a class="nav-link text-color" href="/register">Register</a> 
+                       </li> --}}
+               
+            </ul>
+          {{#if isLogin}}
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <span class="nav-link text-color" aria-current="page">Hallo, {{user.name}}</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-color" aria-current="page" href="/logout">Logout</a>
+                        </li>
+                    </ul>
+
+                  {{else}}
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="/register">Register</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="/login">Login</a>
+                      </li>
+                    </ul>
+
+
+                  {{/if}}
+        </div>
+     
+            
+                  
+    <div class="contact">    
+            <a href="/contact">
+                <img src="../public/asset/images/mail.png" alt="">Contact Me
+            </a>
+        </div>
+
+    </nav>
+
+
+
+    <div class="container">
+        <div class="section">
+            <div class="left">
+                <div class="card1">
+                    <img src="../public/asset/images/andi.jpeg" alt="" />
+                    <h3>Andi Safariansyah</h3>
+                    <p>A web developer who specializes in front-end development of all stages of the development cycle for dynamic web projects. Able to effectively self-manage during independent projects.As well as able to collaborate with teams.
+                    </p>
+                   
+                    <table border="1">
+                        <thead>
+                            <tr class="tr">
+                            <th>no</th>
+                            <th>Experience</th>
+                            <th>Year</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            {{#each data}}
+                            <tr>
+                            <th>{{this.id}}</th>
+                            <td>{{this.experience}}</td>
+                            <td>{{this.year}}</td>
+                        </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                       
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <div class="right">
+                <h1>Hi There!!!</h1>
+                <p>A web developer who specializes in front-end development of all stages of the development cycle for dynamic web projects. Able to effectively self-manage during independent projects.As well as able to collaborate with teams
+                </p>
+                <div class="skil-container">
+                    <div class="middle">
+                        <img src="../public/asset/images/js.png" alt="" class="kartu">
+                        <h4>Js</h4>
+                        <p>Java script is... JavaScript is a scripting language used to create and control dynamic website content, for example in the process of moving pages, refreshes, or other changes to the screen without requiring you to manually reload
+                            web pages.</p>
+                    </div>
+                    <div class="middle">
+                        <img src="../public/asset/images/git.png" alt="" class="kartu">
+                        <h4>Git</h4>
+                        <p>As a programmer and developer, Git is a common tool used for software development. Therefore, it is important for you to really know what Git is. No need to be confused, because Glints has prepared the full explanation, just for
+                            you.
+                        </p>
+                    </div>
+                    <div class="middle">
+                        <img src="../public/asset/images/deploy.png" alt="" class="kartu">
+                        <h4>Deploy</h4>
+                        <p>Deployment is a term that encompasses all processes involved in getting new software (software) or hardware running well in its environment, including installation, configuration, operation, testing and making the necessary changes.</p>
+                    </div>
+                </div>
+
+                <div class="medsos">
+                    <h4>Follow Me</h4>
+                    <div class="kotak">
+                        <a href="https://web.facebook.com/?_rdc=1&_rdr">
+                            <img src="../public/asset/images/fb.png" alt="" class="box">
+                        </a>
+
+                        <a href="https://www.instagram.com/andisafariansyah7/">
+                            <img src="../public/asset/images/ig.jpg" alt="" class="box">
+                        </a>
+
+                        <a href="https://twitter.com/?lang=en-id">
+                            <img src="../public/asset/images/twit.jpg" alt="" class="box">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/andi-safariansyah-18422a227/">
+                            <img src="../public/asset/images/lkind.png" alt="" class="box">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

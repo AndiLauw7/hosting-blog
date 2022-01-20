@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(237 247 242);
+    display: flex;
+    width: 100%;
+    height: 7vh;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+nav div.menu {
+    padding-left: 10px;
+}
+
+nav div.contact {
+    padding-right: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+nav .logo {
+    text-decoration: none;
+    /* display: flex; */
+    align-items: center;
+}
+
+.logo img {
+    padding-left: 10px;
+    width: 50px;
+    border-radius: 2px;
+}
+
+nav .menu {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+nav a {
+    color: rgb(15, 4, 165);
+    text-decoration: none;
+    padding: 0 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+nav ul li {
+    display: inline-flex;
+    /* display: inline; */
+    margin-left: 10px;
+    font-size: 0.9em;
+    font-weight: bolder;
+    font-family: url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Mali:wght@200&display=swap');
+}
+
+li a:hover {
+    color: coral;
+    transform: translateY(1px);
+}
+
+
+/* ELEMENT-MARQUEE */
+
+
+/* ELEMENT-CONTACT */
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.contact a {
+    font-weight: bolder;
+    background-color: rgb(255, 115, 0);
+    font-size: 0.9em;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.contact a img {
+    width: 25px;
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 576px) {
+    .nav {
+        width: 100%;
+    }
+}

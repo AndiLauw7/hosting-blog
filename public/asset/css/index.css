@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-contact {
+    background-color: orangered;
+}
+
+.text-color {
+    color: orangered !important;
+}
+
+.container-form {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.navbar {
+    height: 7vh;
+}
+
+.container-form {
+    height: 93vh;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: orangered;
+}
