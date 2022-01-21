@@ -36,13 +36,13 @@ app.use(
 
 
 // let isLogin = true
-app.get('/index', function(request, response) {
-    response.render('index', {
+// app.get('/index', function(request, response) {
+//     response.render('index', {
 
-        isLogin: request.session.isLogin,
-        user: request.session.user
-    })
-})
+//         isLogin: request.session.isLogin,
+//         user: request.session.user
+//     })
+// })
 
 app.get('/index', function(request, response) {
     db.connect(function(err, client, done) {
